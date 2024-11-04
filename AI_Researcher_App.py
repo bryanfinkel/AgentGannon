@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-
+ 
 # Streamlit App
 st.title("AI Research Assistant")
 
@@ -12,7 +12,10 @@ with st.form(key='input_form'):
 
 # Function to send data to Make webhook
 def send_to_make_webhook(company_name, company_website):
-    webhook_url = "YOUR MAKE WEBHOOK URL"  # Replace with your Make webhook URL
+    # webhook_url = "YOUR MAKE WEBHOOK URL"  # Replace with your Make webhook URL
+    webhook_url = "https://hook.us1.make.com/cq99ng5y63x2iteajv786ras33jvtk61"  # Replace with your Make webhook URL
+
+    
     payload = {
         "company_name": company_name,
         "company_website": company_website
